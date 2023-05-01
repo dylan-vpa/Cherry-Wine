@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #18100c;
+    font-family: Roboto;
+    font-size: larger;
+    animation: opacity 1s;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between; 
+    background-color: #9e2126;
+}
+
+#nav-left, #nav-right {
+    padding: 15px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#nav-left h1 {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+#nav-right ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+    color: #9b6c59;
+}
+
+#nav-right a{
+    text-decoration: none;
+    color: #9b6c59;
+}
+
+#nav-right a:hover, #nav-right a:focus, #nav-right p:hover, #nav-right p:focus {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #9e2126;
+}
+
+#intro picture {
+    display: grid;
+    justify-content: flex-end;
+}
+
+#intro img {
+    width: 100%;
+}
+
+.content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.content p {
+    color: #ffffff;
+}
+
+#products {
+    padding: 30px 15px 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.product {
+    padding: 10px;
+    background-color: #baae91;
+    text-align: center;
+
+}
+
+.product:hover, .product:focus {
+    transform: scale(1.03);
+    transition: ease 0.3s;
+}
+
+.product img {
+    width: 225px;
+}
+
+.product a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.product a:hover, .product a:focus {
+    color: #b02a2f;
+    transition: ease 0.3s;
+}
+
+#footer {
+    padding: 40px 15px 40px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+#footer h3, #footer section {
+    width: 50%;
+}
+
+.title {
+    display: grid;
+    place-self: center;
+    text-align: center;
+}
+
+.input {
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background: none;
+    width: 70%;
+    color: #9e2126;
+    outline: none;
+}
+
+.submit {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px;
+    border: none;
+}
+.submit:hover, .submit:focus {
+    color: #9e2126;
+    transform: scale(1.05);
+    transition: ease 0.3s;
+}
